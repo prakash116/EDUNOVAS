@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "NexoraTech",
+  name: "EDUNOVAS",
   tagline: "Build the Future with Robotics, AI & Next-Gen Technology Learning.",
   email: "hello@nexoratech.in",
   phone: "+91 98765 43210",
@@ -11,12 +11,9 @@ export const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Programs", href: "/programs" },
   { label: "Robot Kits", href: "/kits" },
-  { label: "Membership", href: "/membership" },
   { label: "Workshops", href: "/workshops" },
   { label: "Colleges", href: "/partnerships" },
   { label: "Placements", href: "/placements" },
-  { label: "Partners", href: "/partners" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export const STATS = [
@@ -175,81 +172,102 @@ export const KITS: Kit[] = [
   },
 ];
 
-export type Plan = {
-  name: string;
-  price: string;
-  period: string;
-  audience: string;
-  featured?: boolean;
-  benefits: string[];
-};
-
-export const PLANS: Plan[] = [
-  {
-    name: "Student Plan",
-    price: "₹499",
-    period: "/month",
-    audience: "For individual learners starting out",
-    benefits: [
-      "Access to 3 foundation courses",
-      "10% discount on robot kits",
-      "Monthly live workshop access",
-      "Community mentor support",
-      "Course completion certificate",
-    ],
-  },
-  {
-    name: "Pro Learner Plan",
-    price: "₹1,299",
-    period: "/month",
-    audience: "For serious builders & job seekers",
-    featured: true,
-    benefits: [
-      "Unlimited access to all courses",
-      "25% discount on all kits",
-      "All workshops + bootcamps",
-      "1-on-1 mentor support",
-      "Guided capstone projects",
-      "Verified certificates",
-      "Placement support & referrals",
-    ],
-  },
-  {
-    name: "College Plan",
-    price: "₹49,999",
-    period: "/semester",
-    audience: "For departments & student clubs",
-    benefits: [
-      "Bulk student course access",
-      "On-campus workshop sessions",
-      "Lab kit bundles at special pricing",
-      "Faculty development support",
-      "Project & hackathon guidance",
-      "Co-branded certificates",
-    ],
-  },
-  {
-    name: "Institutional Plan",
-    price: "Custom",
-    period: "",
-    audience: "For universities & training partners",
-    benefits: [
-      "Full curriculum licensing",
-      "Robotics / AI lab setup",
-      "Dedicated training team",
-      "MOU-based collaboration",
-      "Placement partnership network",
-      "Innovation cell & incubation support",
-    ],
-  },
-];
-
 export const PARTNERS = [
-  { name: "Makemanager", domain: "Project & Training Management" },
-  { name: "SkyTech", domain: "Cloud & Infrastructure" },
-  { name: "Manatec", domain: "Automotive & Industrial Tech" },
-  { name: "TVS Associates", domain: "Engineering & Hiring" },
-  { name: "Elan Naturals", domain: "Product Innovation" },
+  {
+    name: "Makemanager",
+    domain: "Business & Growth Solutions",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM (1).jpeg",
+  },
+  {
+    name: "SkyTech",
+    domain: "Automotive Workshop Solutions",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.39 AM.jpeg",
+  },
+  {
+    name: "Manatec",
+    domain: "Automotive Technology",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM.jpeg",
+  },
+  {
+    name: "EVE Associates",
+    domain: "Engineering & Consulting",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM (2).jpeg",
+  },
+  {
+    name: "Xebia",
+    domain: "Technology & Digital Engineering",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.41 AM (2).jpeg",
+  },
+  {
+    name: "Make My Restaurant",
+    domain: "Restaurant Business Solutions",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.41 AM.jpeg",
+  },
+  {
+    name: "RC",
+    domain: "Recruitment Partner",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.41 AM (1).jpeg",
+  },
+  {
+    name: "Google",
+    domain: "Technology Partner",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM (1).jpeg",
+  },
+  {
+    name: "Orange",
+    domain: "Digital & Telecommunications",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM (2).jpeg",
+  },
+  {
+    name: "Microsoft",
+    domain: "Technology Partner",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM.jpeg",
+  },
+  {
+    name: "Infosys",
+    domain: "Technology & Consulting",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM (1).jpeg",
+  },
+  {
+    name: "HDFC Bank",
+    domain: "Banking & Financial Services",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM (2).jpeg",
+  },
+  {
+    name: "HCL",
+    domain: "Technology & Digital Services",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM.jpeg",
+  },
+  {
+    name: "AiProff",
+    domain: "Artificial Intelligence",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM (1).jpeg",
+  },
+  {
+    name: "SEESAC",
+    domain: "Social Impact Partner",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM.jpeg",
+  },
+  {
+    name: "Industry Partner Network",
+    domain: "Hiring & Technology Ecosystem",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM (2).jpeg",
+  },
+  {
+    name: "KR Mangalam University",
+    domain: "Academic Partner",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM.jpeg",
+  },
+  {
+    name: "NGF College",
+    domain: "Academic Partner",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM (1).jpeg",
+  },
+  {
+    name: "Sharda University",
+    domain: "Academic Partner",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM (2).jpeg",
+  },
 ];
 
 export const TESTIMONIALS = [

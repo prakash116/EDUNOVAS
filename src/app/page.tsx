@@ -5,10 +5,10 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import CTASection from "@/components/ui/CTASection";
 import CourseCard from "@/components/cards/CourseCard";
 import ProductCard from "@/components/cards/ProductCard";
-import PartnerCard from "@/components/cards/PartnerCard";
+import PartnerSlider from "@/components/home/PartnerSlider";
 import Reveal from "@/components/motion/Reveal";
 import GlowButton from "@/components/ui/GlowButton";
-import { COURSES, KITS, PARTNERS } from "@/data/site";
+import { COURSES, KITS } from "@/data/site";
 
 export const metadata: Metadata = { title: "Home" };
 
@@ -108,18 +108,9 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Ecosystem"
           title="Backed by Industry Partners"
-          subtitle="Companies that power our training, hiring and real-world project pipelines."
+          subtitle="Organizations that power our training, hiring, academic collaborations and real-world project pipelines."
         />
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-          {PARTNERS.map((partner, i) => (
-            <PartnerCard
-              key={partner.name}
-              name={partner.name}
-              domain={partner.domain}
-              index={i}
-            />
-          ))}
-        </div>
+        <PartnerSlider />
       </section>
 
       <CTASection

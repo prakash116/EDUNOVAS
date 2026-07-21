@@ -43,8 +43,8 @@ export default function ProgramsPage() {
         subtitle="Talk to our mentors — we'll map your goals to the right learning track in one free session."
         primaryLabel="Get Free Guidance"
         primaryHref="/contact"
-        secondaryLabel="View Membership Plans"
-        secondaryHref="/membership"
+        secondaryLabel="Explore Robot Kits"
+        secondaryHref="/kits"
       />
     </>
   );

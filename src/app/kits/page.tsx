@@ -59,8 +59,8 @@ export default function KitsPage() {
         subtitle="Special institutional pricing on kit bundles for classrooms, labs and workshops."
         primaryLabel="Request Bulk Quote"
         primaryHref="/contact"
-        secondaryLabel="See College Plans"
-        secondaryHref="/membership"
+        secondaryLabel="College Partnerships"
+        secondaryHref="/partnerships"
       />
     </>
   );

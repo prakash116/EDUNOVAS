@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const INTEREST_OPTIONS = [
   "Buy Robot Kit",
   "Join Course",
-  "Membership Plan",
   "College Collaboration",
   "Workshop Booking",
   "Placement Partnership",

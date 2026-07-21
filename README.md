@@ -1,8 +1,8 @@
-# NexoraTech — EdTech Platform Frontend
+# EDUNOVAS — EdTech Platform Frontend
 
 A modern, premium, futuristic promotional website for an EdTech platform selling
 robot kits, AI kits, cloud computing programs, next-gen technology courses,
-membership plans and hardware development kits.
+campus workshops and hardware development kits.
 
 ## Tech Stack
 
@@ -27,11 +27,9 @@ npm run build    # production build
 | `/about`        | About Us                    |
 | `/programs`     | Programs & Courses          |
 | `/kits`         | Robot Kits & Hardware Kits  |
-| `/membership`   | Membership Plans            |
 | `/workshops`    | Workshops & Training        |
 | `/partnerships` | College Partnerships        |
 | `/placements`   | Placements & Success        |
-| `/partners`     | Partners & Collaborations   |
 | `/contact`      | Contact / Enquiry           |
 
 ## Structure
@@ -44,10 +42,10 @@ src/
     home/         # HeroSection, StatsSection
     three/        # RobotScene (client-only 3D canvas)
     ui/           # SectionHeading, PageHero, GlowButton, CTASection
-    cards/        # CourseCard, ProductCard, PricingCard, PartnerCard, TestimonialCard
+    cards/        # CourseCard, ProductCard, PartnerCard, TestimonialCard
     contact/      # ContactForm (interest chips + demo submit state)
     motion/       # Reveal (scroll-into-view animation wrapper)
-  data/site.ts    # all content: nav, stats, courses, kits, plans, partners, testimonials
+  data/site.ts    # shared content: nav, stats, courses, kits, partners, testimonials
 ```
 
 All site content (courses, kits, prices, partners, contact details) lives in
