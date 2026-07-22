@@ -1,9 +1,9 @@
 export const SITE = {
   name: "EDUNOVAS",
   tagline: "Build the Future with Robotics, AI & Next-Gen Technology Learning.",
-  email: "hello@nexoratech.in",
-  phone: "+91 98765 43210",
-  whatsapp: "https://wa.me/919876543210",
+  email: "edunovateam@gmail.com",
+  phone: "+91 83687 08750",
+  whatsapp: "https://wa.me/918368708750",
 };
 
 export const NAV_LINKS = [
@@ -19,8 +19,8 @@ export const NAV_LINKS = [
 export const STATS = [
   { value: "1,000+", label: "Students Trained" },
   { value: "95%", label: "Placement Success Rate" },
-  { value: "3+", label: "College MOUs Signed" },
-  { value: "5+", label: "Industry Partners" },
+  { value: "3", label: "Partner Colleges" },
+  { value: "15+", label: "Mentor & Advisor Network" },
 ];
 
 export type Course = {
@@ -172,103 +172,111 @@ export const KITS: Kit[] = [
   },
 ];
 
-export const PARTNERS = [
-  {
-    name: "Makemanager",
-    domain: "Business & Growth Solutions",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM (1).jpeg",
-  },
-  {
-    name: "SkyTech",
-    domain: "Automotive Workshop Solutions",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.39 AM.jpeg",
-  },
-  {
-    name: "Manatec",
-    domain: "Automotive Technology",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM.jpeg",
-  },
-  {
-    name: "EVE Associates",
-    domain: "Engineering & Consulting",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM (2).jpeg",
-  },
+export type Organization = {
+  name: string;
+  relationship: string;
+  logo?: string;
+};
+
+export const COMPANY_MENTORS: Organization[] = [
   {
     name: "Xebia",
-    domain: "Technology & Digital Engineering",
+    relationship: "Company Mentor",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.41 AM (2).jpeg",
   },
   {
-    name: "Make My Restaurant",
-    domain: "Restaurant Business Solutions",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.41 AM.jpeg",
-  },
-  {
-    name: "RC",
-    domain: "Recruitment Partner",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.41 AM (1).jpeg",
+    name: "Microsoft",
+    relationship: "Company Mentor",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM.jpeg",
   },
   {
     name: "Google",
-    domain: "Technology Partner",
+    relationship: "Company Mentor",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM (1).jpeg",
   },
   {
     name: "Orange",
-    domain: "Digital & Telecommunications",
+    relationship: "Company Mentor",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM (2).jpeg",
   },
   {
-    name: "Microsoft",
-    domain: "Technology Partner",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM.jpeg",
-  },
-  {
     name: "Infosys",
-    domain: "Technology & Consulting",
+    relationship: "Company Mentor",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM (1).jpeg",
   },
   {
-    name: "HDFC Bank",
-    domain: "Banking & Financial Services",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM (2).jpeg",
-  },
-  {
     name: "HCL",
-    domain: "Technology & Digital Services",
+    relationship: "Company Mentor",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM.jpeg",
   },
   {
-    name: "AiProff",
-    domain: "Artificial Intelligence",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM (1).jpeg",
+    name: "HDFC Bank",
+    relationship: "Company Mentor",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM (2).jpeg",
   },
+  { name: "Axis Bank", relationship: "Company Mentor" },
+  { name: "RT", relationship: "Company Mentor" },
+];
+
+export const MENTORS_AND_ADVISORS: Organization[] = [
   {
     name: "SEESAC",
-    domain: "Social Impact Partner",
+    relationship: "Mentor & Advisor",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM.jpeg",
   },
   {
-    name: "Industry Partner Network",
-    domain: "Hiring & Technology Ecosystem",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM (2).jpeg",
+    name: "AiProff",
+    relationship: "Mentor & Advisor",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM (1).jpeg",
+  },
+  { name: "Aurevia Technology", relationship: "Mentor & Advisor" },
+  { name: "Elan Natural", relationship: "Mentor & Advisor" },
+  {
+    name: "SkyTech",
+    relationship: "Mentor & Advisor",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.39 AM.jpeg",
   },
   {
-    name: "KR Mangalam University",
-    domain: "Academic Partner",
+    name: "Manatec",
+    relationship: "Mentor & Advisor",
+    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM.jpeg",
+  },
+];
+
+export const ALUMNI_NETWORK: Organization[] = [
+  { name: "IIT Delhi", relationship: "Alumni Network" },
+  { name: "IIT BHU", relationship: "Alumni Network" },
+  { name: "Guru Govindh", relationship: "Alumni Network" },
+];
+
+export const ACADEMIC_PARTNERS: Organization[] = [
+  {
+    name: "K.R. Mangalam University",
+    relationship: "Partner College",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM.jpeg",
   },
   {
     name: "NGF College",
-    domain: "Academic Partner",
+    relationship: "Partner College",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM (1).jpeg",
   },
   {
     name: "Sharda University",
-    domain: "Academic Partner",
+    relationship: "Partner College",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM (2).jpeg",
   },
 ];
+
+export const ORGANIZATION_GROUPS = [
+  { title: "Company Mentors", organizations: COMPANY_MENTORS },
+  { title: "Mentors & Advisors", organizations: MENTORS_AND_ADVISORS },
+  { title: "Alumni Network", organizations: ALUMNI_NETWORK },
+  { title: "Partner Colleges", organizations: ACADEMIC_PARTNERS },
+];
+
+export const PARTNERS = ORGANIZATION_GROUPS.flatMap(
+  (group) => group.organizations
+);
 
 export const TESTIMONIALS = [
   {

@@ -11,18 +11,21 @@ const CHANNELS = [
     icon: "📧",
     title: "Email Us",
     value: SITE.email,
+    href: `mailto:${SITE.email}`,
     note: "Replies within 24 hours",
   },
   {
     icon: "📞",
     title: "Call Us",
     value: SITE.phone,
+    href: `tel:${SITE.phone.replace(/\s/g, "")}`,
     note: "Mon–Sat, 10 AM – 7 PM IST",
   },
   {
     icon: "📍",
     title: "Visit Us",
     value: "Innovation Hub, Tech Park",
+    href: undefined,
     note: "Address placeholder",
   },
 ];
@@ -43,7 +46,13 @@ export default function ContactPage() {
           <div className="space-y-4 lg:col-span-2">
             {CHANNELS.map((channel, i) => (
               <Reveal key={channel.title} delay={i * 0.08}>
-                <div className="glass glass-hover flex items-start gap-4 p-6">
+                <a
+                  href={channel.href}
+                  aria-disabled={!channel.href}
+                  className={`glass flex items-start gap-4 p-6 ${
+                    channel.href ? "glass-hover" : "pointer-events-none"
+                  }`}
+                >
                   <span className="text-2xl">{channel.icon}</span>
                   <div>
                     <h3 className="font-display font-bold text-white">
@@ -52,7 +61,7 @@ export default function ContactPage() {
                     <p className="mt-1 text-sm text-neon-cyan">{channel.value}</p>
                     <p className="mt-0.5 text-xs text-slate-500">{channel.note}</p>
                   </div>
-                </div>
+                </a>
               </Reveal>
             ))}
 

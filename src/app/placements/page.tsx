@@ -13,7 +13,7 @@ const SUPPORT = [
   { icon: "🎤", title: "Interview Preparation", text: "Mock technical interviews, HR rounds and company-specific preparation sprints." },
   { icon: "📁", title: "Project Portfolio Building", text: "Ship 3–5 real hardware and software projects that make your profile impossible to ignore." },
   { icon: "🧪", title: "Internship Support", text: "Internship placements with partner companies to build real industry experience early." },
-  { icon: "🔗", title: "Industry Connections", text: "Direct referrals into our hiring network — Makemanager, SkyTech, Manatec, TVS Associates and more." },
+  { icon: "🔗", title: "Industry Connections", text: "Career exposure supported by company mentors, expert advisors and an alumni network spanning leading institutions." },
   { icon: "📜", title: "Verified Certification", text: "Industry-recognized certificates that validate hands-on skills, not just attendance." },
 ];
 

@@ -60,11 +60,11 @@ export default function PartnerSlider() {
         ref={sliderRef}
         onScroll={syncActiveSlide}
         className="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth px-1 py-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-        aria-label="Industry and academic partners"
+        aria-label="Company mentors, advisors, alumni and academic partners"
       >
         {PARTNERS.map((partner, index) => (
           <div
-            key={`${partner.name}-${partner.logo}`}
+            key={`${partner.name}-${partner.relationship}`}
             className="min-w-[84%] snap-start sm:min-w-[46%] lg:min-w-[30%] xl:min-w-[22%]"
           >
             <PartnerCard {...partner} index={index} />

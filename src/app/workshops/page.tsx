@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Workshops & Training" };
 
 const PAST_WORKSHOPS = [
   {
-    college: "KR Mangalam University",
+    college: "K.R. Mangalam University",
     topic: "Hands-On Robotics & Automation Workshop",
     detail:
       "Two-day intensive where students built and programmed autonomous robots from our starter kits — ending with a live robo-race showcase.",
@@ -51,7 +51,7 @@ export default function WorkshopsPage() {
         <SectionHeading
           eyebrow="Past Workshops"
           title="Proven on Real Campuses"
-          subtitle="Successfully conducted hands-on workshops at KR Mangalam University and Sharda University."
+          subtitle="Successfully conducted hands-on workshops at K.R. Mangalam University and Sharda University."
         />
         <div className="grid gap-6 md:grid-cols-2">
           {PAST_WORKSHOPS.map((workshop, i) => (

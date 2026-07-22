@@ -74,8 +74,9 @@ export default function HeroSection() {
 
           <motion.p variants={item} className="mt-8 text-sm text-slate-500">
             Trusted by <span className="text-slate-300">1,000+ students</span>,{" "}
-            <span className="text-slate-300">3+ partner colleges</span> and
-            leading industry teams — {SITE.name}.
+            <span className="text-slate-300">3 partner colleges</span> and a{" "}
+            <span className="text-slate-300">mentor network of 15+ organizations</span>
+            {" "}— {SITE.name}.
           </motion.p>
         </motion.div>
 

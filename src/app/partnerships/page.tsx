@@ -3,6 +3,7 @@ import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTASection from "@/components/ui/CTASection";
 import Reveal from "@/components/motion/Reveal";
+import { ACADEMIC_PARTNERS } from "@/data/site";
 
 export const metadata: Metadata = { title: "College Partnerships" };
 
@@ -29,7 +30,7 @@ export default function PartnershipsPage() {
         eyebrow="College Partnerships"
         title="Academic Collaborations That"
         highlight="Transform Campuses"
-        subtitle="We have partnered with three colleges and GF through signed MOUs — bringing hands-on technology education, labs and placement pipelines directly into academia."
+        subtitle="We collaborate with Sharda University, K.R. Mangalam University and NGF College — bringing hands-on technology education, labs and placement pipelines directly into academia."
       />
 
       {/* MOU highlight */}
@@ -39,24 +40,21 @@ export default function PartnershipsPage() {
             <div className="pointer-events-none absolute -top-20 right-10 h-56 w-56 rounded-full bg-neon-cyan/15 blur-[90px]" />
             <span className="text-4xl">🤝</span>
             <h2 className="mt-4 font-display text-2xl font-bold text-white md:text-3xl">
-              3+ Signed MOUs — and Growing
+              3 Partner Colleges — and Growing
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-slate-400">
-              Formal academic partnerships with three colleges and GF, covering
-              skill development, lab infrastructure, workshops and student
-              placement programs.
+              Our partner-college network supports skill development, lab
+              infrastructure, workshops and student placement programs.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              {["Partner College 1", "Partner College 2", "Partner College 3", "GF"].map(
-                (name) => (
+              {ACADEMIC_PARTNERS.map((partner) => (
                   <span
-                    key={name}
+                    key={partner.name}
                     className="glass rounded-full px-5 py-2 text-sm font-medium text-slate-300"
                   >
-                    {name}
+                    {partner.name}
                   </span>
-                )
-              )}
+                ))}
             </div>
           </div>
         </Reveal>

@@ -26,7 +26,7 @@ const VALUES = [
   {
     icon: "🌍",
     title: "Our Impact",
-    text: "1,000+ students trained, 95% placement success, MOUs with 3+ colleges and a growing network of industry partners hiring straight from our programs.",
+    text: "1,000+ students trained, 95% placement success, collaborations with 3 colleges and a growing network of company mentors, advisors and alumni.",
   },
 ];
 
