@@ -31,7 +31,7 @@ export default function PartnerCard({
             alt={`${name} logo`}
             fill
             sizes="(min-width: 1024px) 220px, (min-width: 640px) 30vw, 45vw"
-            className="object-contain p-3"
+            className="object-contain p-3 mix-blend-multiply"
           />
         ) : (
           <span className="flex h-full items-center justify-center gap-2 bg-gradient-to-br from-slate-50 to-slate-200 px-3 font-display text-lg font-bold text-slate-800">

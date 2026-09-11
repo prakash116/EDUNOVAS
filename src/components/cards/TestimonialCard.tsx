@@ -1,16 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+import type { Testimonial } from "@/data/site";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function TestimonialCard({
   name,
   role,
   quote,
+  photo,
   index,
-}: {
-  name: string;
-  role: string;
-  quote: string;
+}: Testimonial & {
   index: number;
 }) {
   return (
@@ -29,9 +31,21 @@ export default function TestimonialCard({
         {quote}
       </blockquote>
       <figcaption className="mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
-        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-neon-cyan/30 to-neon-purple/30 font-display text-sm font-bold text-white">
-          {name.split(" ").map((n) => n[0]).join("")}
-        </span>
+        {photo ? (
+          <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border-2 border-neon-cyan/40">
+            <Image
+              src={`${basePath}${photo}`}
+              alt={`Portrait of ${name}`}
+              fill
+              sizes="44px"
+              className="object-cover"
+            />
+          </span>
+        ) : (
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-neon-cyan/30 to-neon-purple/30 font-display text-sm font-bold text-white">
+            {name.split(" ").map((n) => n[0]).join("")}
+          </span>
+        )}
         <div>
           <p className="text-sm font-semibold text-white">{name}</p>
           <p className="text-xs text-neon-cyan">{role}</p>

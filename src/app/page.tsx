@@ -7,6 +7,10 @@ import CTASection from "@/components/ui/CTASection";
 import CourseCard from "@/components/cards/CourseCard";
 import ProductCard from "@/components/cards/ProductCard";
 import PartnerSlider from "@/components/home/PartnerSlider";
+import LogoMarquee from "@/components/home/LogoMarquee";
+import ClassroomGallery from "@/components/home/ClassroomGallery";
+import TestimonialCarousel from "@/components/home/TestimonialCarousel";
+import FaqAccordion from "@/components/home/FaqAccordion";
 import Reveal from "@/components/motion/Reveal";
 import GlowButton from "@/components/ui/GlowButton";
 import { COURSES, KITS, ORGANIZATION_GROUPS } from "@/data/site";
@@ -43,6 +47,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <StatsSection />
+      <LogoMarquee />
 
       {/* Learning in action */}
       <section className="section !pb-8">
@@ -148,6 +153,26 @@ export default function HomePage() {
         </Reveal>
       </section>
 
+      {/* Real classrooms */}
+      <section className="section">
+        <SectionHeading
+          eyebrow="On the Ground"
+          title="Real Students. Real Classrooms."
+          subtitle="Scenes from our webinars, campus workshops and lab sessions at partner colleges."
+        />
+        <ClassroomGallery />
+      </section>
+
+      {/* Testimonials */}
+      <section className="section !pt-0">
+        <SectionHeading
+          eyebrow="Success Stories"
+          title="What Our Students Say"
+          subtitle="Graduates who built their careers here, in their own words."
+        />
+        <TestimonialCarousel />
+      </section>
+
       {/* Partners strip */}
       <section className="section">
         <SectionHeading
@@ -177,6 +202,16 @@ export default function HomePage() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section !pt-0">
+        <SectionHeading
+          eyebrow="FAQ"
+          title="Frequently Asked Questions"
+          subtitle="Quick answers about programs, eligibility, certificates and refunds."
+        />
+        <FaqAccordion />
       </section>
 
       <CTASection
