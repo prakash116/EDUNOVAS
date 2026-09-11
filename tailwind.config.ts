@@ -37,8 +37,14 @@ const config: Config = {
         "pulse-slow": "pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         float: "float 6s ease-in-out infinite",
         shimmer: "shimmer 2.5s linear infinite",
+        marquee: "marquee 55s linear infinite",
+        "marquee-reverse": "marquee 55s linear infinite reverse",
       },
       keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-14px)" },

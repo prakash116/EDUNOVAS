@@ -178,44 +178,48 @@ export type Organization = {
   logo?: string;
 };
 
+const LOGO_DIR = "/images/Company_Logo";
+
+/** Logo files in public/images/Company_Logo, keyed by organisation. */
+export const LOGOS = {
+  aureviaTech: `${LOGO_DIR}/IMG-20260911-WA0013.jpg`,
+  makeMyRestaurant: `${LOGO_DIR}/IMG-20260911-WA0014.jpg`,
+  rc: `${LOGO_DIR}/IMG-20260911-WA0015.jpg`,
+  microsoft: `${LOGO_DIR}/IMG-20260911-WA0016.jpg`,
+  google: `${LOGO_DIR}/IMG-20260911-WA0017.jpg`,
+  orange: `${LOGO_DIR}/IMG-20260911-WA0018.jpg`,
+  xebia: `${LOGO_DIR}/IMG-20260911-WA0019.jpg`,
+  hcl: `${LOGO_DIR}/IMG-20260911-WA0020.jpg`,
+  eveAssociates: `${LOGO_DIR}/IMG-20260911-WA0021.jpg`,
+  infosys: `${LOGO_DIR}/IMG-20260911-WA0022.jpg`,
+  aiProff: `${LOGO_DIR}/IMG-20260911-WA0023.jpg`,
+  krMangalam: `${LOGO_DIR}/IMG-20260911-WA0024.jpg`,
+  ngf: `${LOGO_DIR}/IMG-20260911-WA0025.jpg`,
+  rtGlobal: `${LOGO_DIR}/IMG-20260911-WA0027.jpg`,
+  iitBhu: `${LOGO_DIR}/IMG-20260911-WA0028.jpg`,
+  iitDelhi: `${LOGO_DIR}/IMG-20260911-WA0029.jpg`,
+  axisBank: `${LOGO_DIR}/IMG-20260911-WA0030.jpg`,
+  sharda: `${LOGO_DIR}/IMG-20260911-WA0032.jpg`,
+  hdfcBank: `${LOGO_DIR}/IMG-20260911-WA0033.jpg`,
+  makeManager: `${LOGO_DIR}/IMG-20260911-WA0034.jpg`,
+  manatec: `${LOGO_DIR}/IMG-20260911-WA0035.jpg`,
+  skyTech: `${LOGO_DIR}/IMG-20260911-WA0036.jpg`,
+} as const;
+
 export const COMPANY_MENTORS: Organization[] = [
+  { name: "Xebia", relationship: "Company Mentor", logo: LOGOS.xebia },
+  { name: "Microsoft", relationship: "Company Mentor", logo: LOGOS.microsoft },
+  { name: "Google", relationship: "Company Mentor", logo: LOGOS.google },
+  { name: "Orange", relationship: "Company Mentor", logo: LOGOS.orange },
+  { name: "Infosys", relationship: "Company Mentor", logo: LOGOS.infosys },
+  { name: "HCL", relationship: "Company Mentor", logo: LOGOS.hcl },
+  { name: "HDFC Bank", relationship: "Company Mentor", logo: LOGOS.hdfcBank },
+  { name: "Axis Bank", relationship: "Company Mentor", logo: LOGOS.axisBank },
   {
-    name: "Xebia",
+    name: "RT Global Infosolutions",
     relationship: "Company Mentor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.41 AM (2).jpeg",
+    logo: LOGOS.rtGlobal,
   },
-  {
-    name: "Microsoft",
-    relationship: "Company Mentor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM.jpeg",
-  },
-  {
-    name: "Google",
-    relationship: "Company Mentor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM (1).jpeg",
-  },
-  {
-    name: "Orange",
-    relationship: "Company Mentor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.42 AM (2).jpeg",
-  },
-  {
-    name: "Infosys",
-    relationship: "Company Mentor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM (1).jpeg",
-  },
-  {
-    name: "HCL",
-    relationship: "Company Mentor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM.jpeg",
-  },
-  {
-    name: "HDFC Bank",
-    relationship: "Company Mentor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.43 AM (2).jpeg",
-  },
-  { name: "Axis Bank", relationship: "Company Mentor" },
-  { name: "RT", relationship: "Company Mentor" },
 ];
 
 export const MENTORS_AND_ADVISORS: Organization[] = [
@@ -224,28 +228,20 @@ export const MENTORS_AND_ADVISORS: Organization[] = [
     relationship: "Mentor & Advisor",
     logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM.jpeg",
   },
+  { name: "AiProff", relationship: "Mentor & Advisor", logo: LOGOS.aiProff },
   {
-    name: "AiProff",
+    name: "Aurevia Technology",
     relationship: "Mentor & Advisor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.44 AM (1).jpeg",
+    logo: LOGOS.aureviaTech,
   },
-  { name: "Aurevia Technology", relationship: "Mentor & Advisor" },
   { name: "Elan Natural", relationship: "Mentor & Advisor" },
-  {
-    name: "SkyTech",
-    relationship: "Mentor & Advisor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.39 AM.jpeg",
-  },
-  {
-    name: "Manatec",
-    relationship: "Mentor & Advisor",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.40 AM.jpeg",
-  },
+  { name: "SkyTech", relationship: "Mentor & Advisor", logo: LOGOS.skyTech },
+  { name: "Manatec", relationship: "Mentor & Advisor", logo: LOGOS.manatec },
 ];
 
 export const ALUMNI_NETWORK: Organization[] = [
-  { name: "IIT Delhi", relationship: "Alumni Network" },
-  { name: "IIT BHU", relationship: "Alumni Network" },
+  { name: "IIT Delhi", relationship: "Alumni Network", logo: LOGOS.iitDelhi },
+  { name: "IIT BHU", relationship: "Alumni Network", logo: LOGOS.iitBhu },
   { name: "Guru Govindh", relationship: "Alumni Network" },
 ];
 
@@ -253,17 +249,107 @@ export const ACADEMIC_PARTNERS: Organization[] = [
   {
     name: "K.R. Mangalam University",
     relationship: "Partner College",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM.jpeg",
+    logo: LOGOS.krMangalam,
   },
-  {
-    name: "NGF College",
-    relationship: "Partner College",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM (1).jpeg",
-  },
+  { name: "NGF College", relationship: "Partner College", logo: LOGOS.ngf },
   {
     name: "Sharda University",
     relationship: "Partner College",
-    logo: "/Partners/WhatsApp Image 2026-07-18 at 11.13.45 AM (2).jpeg",
+    logo: LOGOS.sharda,
+  },
+];
+
+/** Every organisation logo, for the homepage marquee. */
+export const LOGO_WALL: { name: string; src: string }[] = [
+  { name: "Microsoft", src: LOGOS.microsoft },
+  { name: "Google", src: LOGOS.google },
+  { name: "Infosys", src: LOGOS.infosys },
+  { name: "HCL", src: LOGOS.hcl },
+  { name: "Xebia", src: LOGOS.xebia },
+  { name: "Orange", src: LOGOS.orange },
+  { name: "HDFC Bank", src: LOGOS.hdfcBank },
+  { name: "Axis Bank", src: LOGOS.axisBank },
+  { name: "IIT Delhi", src: LOGOS.iitDelhi },
+  { name: "IIT BHU", src: LOGOS.iitBhu },
+  { name: "Sharda University", src: LOGOS.sharda },
+  { name: "K.R. Mangalam University", src: LOGOS.krMangalam },
+  { name: "NGF College of Engineering & Technology", src: LOGOS.ngf },
+  { name: "AiProff", src: LOGOS.aiProff },
+  { name: "Aurevia Tech", src: LOGOS.aureviaTech },
+  { name: "RT Global Infosolutions", src: LOGOS.rtGlobal },
+  { name: "SkyTech Autoequip", src: LOGOS.skyTech },
+  { name: "Manatec", src: LOGOS.manatec },
+  { name: "EVE Associates", src: LOGOS.eveAssociates },
+  { name: "MakeManager", src: LOGOS.makeManager },
+  { name: "Make My Restaurant", src: LOGOS.makeMyRestaurant },
+  { name: "RC", src: LOGOS.rc },
+];
+
+const CLASSROOM_DIR = "/images/real student";
+
+export type ClassroomPhoto = { src: string; caption: string; alt: string };
+
+/** Photos from live webinars, campus workshops and lab sessions. */
+export const CLASSROOM_PHOTOS: ClassroomPhoto[] = [
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0008.jpg`,
+    caption: "Generative AI webinar, K.R. Mangalam University",
+    alt: "A packed auditorium of students following a live coding demo on their laptops during the Generative AI webinar at K.R. Mangalam University",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0019.jpg`,
+    caption: "Prompt engineering session on stage",
+    alt: "A mentor speaking at the podium in front of a slide titled Magic Prompt Formula at K.R. Mangalam University",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0020.jpg`,
+    caption: "Students ask questions during live Q&A",
+    alt: "A student standing among a seated audience to ask a question during a Q&A session",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0022.jpg`,
+    caption: "Cohort photo after the AI-powered education talk",
+    alt: "Group of students and mentors posing on stage at K.R. Mangalam University after the session",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0009.jpg`,
+    caption: "Opening the Generative AI Tools hands-on workshop",
+    alt: "A speaker at the podium introducing the Generative AI Tools hands-on workshop at K.R. Mangalam University",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0012.jpg`,
+    caption: "Full house for the campus webinar",
+    alt: "Rows of students with laptops filling a lecture hall at K.R. Mangalam University",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0021.jpg`,
+    caption: "Arduino microcontroller workshop, Nirman Labs",
+    alt: "A mentor explaining an Arduino microcontroller slide to students in a lab classroom",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0016.jpg`,
+    caption: "Mentors work one-on-one in the room",
+    alt: "A mentor leaning over to help a seated student with their laptop during a workshop",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0014.jpg`,
+    caption: "Students settle in for the session",
+    alt: "A seated audience of college students listening attentively in a seminar hall",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0018.jpg`,
+    caption: "Hands-on electronics with real boards",
+    alt: "Students watching a mentor present an Arduino microcontroller lesson in a lab",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0013.jpg`,
+    caption: "Live demo of the OpenAI platform",
+    alt: "A mentor with a microphone demonstrating the OpenAI platform on a large screen",
+  },
+  {
+    src: `${CLASSROOM_DIR}/IMG-20260908-WA0010.jpg`,
+    caption: "Welcoming our guest speaker",
+    alt: "A guest speaker being welcomed with a bouquet on stage before the Generative AI Tools session",
   },
 ];
 
@@ -278,29 +364,72 @@ export const PARTNERS = ORGANIZATION_GROUPS.flatMap(
   (group) => group.organizations
 );
 
-export const TESTIMONIALS = [
+export type Faq = { question: string; answer: string };
+
+export const FAQS: Faq[] = [
+  {
+    question: "What programs does Edunovas offer?",
+    answer:
+      "Edunovas offers hands-on programs in Robotics, Artificial Intelligence, Machine Learning, Cloud Computing, IoT, Automation, and Hardware Development. Our programs combine practical projects, real equipment, and guidance from experienced mentors.",
+  },
+  {
+    question: "Who can join Edunovas programs?",
+    answer:
+      "Our programs are suitable for school students, college students, graduates, beginners, and working professionals interested in learning future-ready technology skills. Course eligibility may vary depending on the program level.",
+  },
+  {
+    question: "Will I receive practical training and project experience?",
+    answer:
+      "Yes. Edunovas follows a project-based learning approach. Students work with real robotics kits, sensors, hardware, programming tools, AI models, and industry-relevant projects to develop practical skills.",
+  },
+  {
+    question: "Does Edunovas provide certificates and placement support?",
+    answer:
+      "Yes. Students who successfully complete their program receive a course-completion certificate. Placement assistance, career guidance, internship opportunities, and interview preparation may also be provided depending on the selected program.",
+  },
+  {
+    question: "What is the Edunovas refund policy?",
+    answer:
+      "You are eligible for a 100% full refund if you submit your refund request within 15 calendar days from the date of payment. No cancellation fee or deduction will be applied during this period. Refund requests must be submitted to edunovateam@gmail.com with the student's name, registered contact details, course or product name, payment date, and payment receipt. Requests submitted after the 15-day period will not be eligible for a refund.",
+  },
+];
+
+export type Testimonial = {
+  name: string;
+  role: string;
+  quote: string;
+  photo?: string;
+};
+
+const TESTIMONIAL_DIR = "/images/testimonials";
+
+export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Ananya Sharma",
     role: "Robotics Program Graduate → Automation Engineer",
     quote:
       "I built my first autonomous robot in week three. The hands-on kits and mentor support turned my curiosity into a career.",
+    photo: `${TESTIMONIAL_DIR}/IMG-20260911-WA0010.jpg`,
   },
   {
     name: "Rohit Verma",
     role: "AI & ML Track → ML Intern, SkyTech",
     quote:
       "The project portfolio I built here got me shortlisted everywhere. Interview prep sessions made the difference.",
+    photo: `${TESTIMONIAL_DIR}/IMG-20260911-WA0011 (1).jpg`,
   },
   {
     name: "Priya Nair",
     role: "IoT Program → Embedded Developer",
     quote:
       "Real hardware, real deadlines, real feedback. This is the practical training colleges never gave us.",
+    photo: `${TESTIMONIAL_DIR}/IMG-20260911-WA0012.jpg`,
   },
   {
     name: "Aditya Kulkarni",
     role: "Cloud Computing → DevOps Engineer",
     quote:
       "From zero cloud knowledge to deploying production-grade pipelines in ten weeks. 100% worth it.",
+    photo: `${TESTIMONIAL_DIR}/IMG-20260911-WA0037.jpg`,
   },
 ];
